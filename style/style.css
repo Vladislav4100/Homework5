@@ -1,0 +1,46 @@
+.flex-container {
+  display: flex; /* flex || inline-flex */
+  justify-content:space-evenly
+}
+
+.sub-menu{
+	display:none;
+}
+
+div:hover>.sub-menu{
+	display:block;
+}
+
+.form{
+	display:none;
+	
+}
+
+.form:target{
+	display:block;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0.5;
+	background-color: red;
+}
+
+.form-body{
+	display:none;
+
+}	
+
+.form:target +.form-body{
+	display:block;
+	position:fixed;
+	z-index:2;
+	top:55px;
+	left:55px;
+	right:55px;
+	bottom:55px;
+	background-color: lightblue;
+	box-shadow:1px 1px 1px 1px black;
+}
